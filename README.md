@@ -36,9 +36,12 @@ Splitting the data into test and train
 
 ## PROGRAM:
 
-Done by : NITHISH N T
-Reg no : 212221040116
+Done by : MANO M
+
+Reg no : 212221040100
+
 import pandas as pd
+
 import numpy as np
 
 df = pd.read_csv("Churn_Modelling.csv")
@@ -82,8 +85,8 @@ df1
 
 df1.describe()
 
-# Since values like Row Number, Customer Id and surname  doesn't affect the output y(Exited).
-# So those are not considered in the x values
+Since values like Row Number, Customer Id and surname  doesn't affect the output y(Exited).
+So those are not considered in the x values
 X = df1[["CreditScore","Geography","Gender","Age","Tenure","Balance","NumOfProducts","HasCrCard","IsActiveMember","EstimatedSalary"]].values
 print(X)
 
